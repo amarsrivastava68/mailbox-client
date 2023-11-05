@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './Authentication/Login';
+import MainPage from "./Component/MainPage";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        
+        <Route path="/" element={<MainPage />} />
 
       </Routes>
     </BrowserRouter>

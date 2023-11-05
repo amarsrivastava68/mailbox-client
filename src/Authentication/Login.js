@@ -94,11 +94,13 @@ const Login = () => {
 
         <Form.Group className="mb-4">
           <Form.Label>Email address</Form.Label>
+          <br/>
           <FormControl type="email" required ref={emailInputRef} />
         </Form.Group>
 
         <Form.Group className="mb-4">
           <Form.Label>Password</Form.Label>
+          <br/>
           <FormControl type="password" ref={passwordInputRef} />
         </Form.Group>
 
@@ -112,7 +114,7 @@ const Login = () => {
             />
           </Form.Group>
         )}
-
+<br/>
         <Row className="mb-4">
           <Col xs="auto" className="d-flex align-items-center">
             <Form.Check
@@ -121,6 +123,7 @@ const Login = () => {
               label="Remember me"
             />
           </Col>
+          <br/>
           <Col>
             <a href="#!">Forgot password?</a>
           </Col>
