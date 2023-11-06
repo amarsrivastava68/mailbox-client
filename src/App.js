@@ -16,7 +16,7 @@ function App() {
         <Route path="/EmailList" element={<EmailList />} />
         <Route path="/emails/:emailId" element={<ViewMail/>} />
         <Route path="/SentMail" element={<SentEmail/>} />
-        
+
       </Routes>
     </BrowserRouter>
   );
