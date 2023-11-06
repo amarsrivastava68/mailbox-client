@@ -38,10 +38,10 @@ const Login = () => {
     let url;
     if (isLogin) {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDyftgu8KgfXBhYY_re1Nq6_fRlwimc1A4";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCVS1aIPWfiuQKRK6KELaKg3mHA5r5kOas";
     } else {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDyftgu8KgfXBhYY_re1Nq6_fRlwimc1A4";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCVS1aIPWfiuQKRK6KELaKg3mHA5r5kOas";
     }
 
     fetch(url, {
@@ -84,7 +84,6 @@ const Login = () => {
 
   return (
     <div className="main-div">
-        
       <Container className="p-3 my-5 d-flex flex-column w-50">
         <div className="text-center mb-3">
           <p className={`neon-text ${isLogin ? "neon-signin" : "neon-signup"}`}>
@@ -94,13 +93,11 @@ const Login = () => {
 
         <Form.Group className="mb-4">
           <Form.Label>Email address</Form.Label>
-          <br/>
           <FormControl type="email" required ref={emailInputRef} />
         </Form.Group>
 
         <Form.Group className="mb-4">
           <Form.Label>Password</Form.Label>
-          <br/>
           <FormControl type="password" ref={passwordInputRef} />
         </Form.Group>
 
@@ -114,7 +111,7 @@ const Login = () => {
             />
           </Form.Group>
         )}
-<br/>
+
         <Row className="mb-4">
           <Col xs="auto" className="d-flex align-items-center">
             <Form.Check
@@ -123,7 +120,6 @@ const Login = () => {
               label="Remember me"
             />
           </Col>
-          <br/>
           <Col>
             <a href="#!">Forgot password?</a>
           </Col>

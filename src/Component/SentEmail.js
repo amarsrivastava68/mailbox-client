@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./SentMail.css";
 import { useSelector } from "react-redux";
-import { selectAllEmails } from "../store/emailSlice";
+import { selectAllEmails } from "../Store/emailSlice";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 

@@ -1,10 +1,10 @@
 import React from "react";
 import "./MainPage.css";
-
+import MyTextEditor from "./TextEditor";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
-import { fetchEmails } from "../store/emailSlice";
+import { fetchEmails } from '../Store/emailSlice';
 
 const MainPage = () => {
   const navigate = useNavigate();
@@ -41,7 +41,9 @@ const MainPage = () => {
         </Button>
         
       </div>
-      
+      <div className="text-editor">
+        <MyTextEditor />
+      </div>
     </div>
   );
 };

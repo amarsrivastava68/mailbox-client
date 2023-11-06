@@ -1,76 +1,26 @@
 .main-div {
-    background-color:rgb(238, 238, 71) ;
-    margin: 0 auto;
-    width:50%;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 20px;
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtYWRqLTAxM18yLmpwZw.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
   
+  .container {
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    font: bold;
+  }
   .neon-text {
-    text-shadow: 0 0 10px #ffffff;
-    font-size: 30px;
-    font-weight: bold;
+    color: #1a71e3; 
+    text-shadow: 0 0 10px rgba(39, 121, 214, 0.8);
+    font-size: larger;
   }
-  
-  .neon-signin {
-    color: #ff0000;
-  }
-  
-  .neon-signup {
-    color: #00ff00;
-  }
-  
-  .form-control {
-    border-radius: 5px;
-    border-color: #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    width: 90%;
-    margin-top: 14px;
-  }
-  
-  .form-control:focus {
-    border-color: #000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .btn {
-    border-radius: 5px;
-    background-color: #000;
-    color: #d8cbcb;
-    padding: 10px;
-    width: 90%;
-    margin-top: 19px;
-  }
-  
-  .btn:hover {
-    background-color: #222;
-  }
-  
   .link-text {
-    color: blue;
-    font-weight: 500;
+    color: #1a71e3; 
+    text-decoration: underline;
     cursor: pointer;
-  }
-  
-  @media (max-width: 576px) {
-    .neon-text {
-      font-size: 20px;
-    }
-  
-    .main-div{
-        width:90%;
-    }
-    .form-control {
-      width: 90%;
-    }
-  
-    .btn {
-      width: 90%;
-    }
   }
   
