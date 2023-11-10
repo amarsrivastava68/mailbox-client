@@ -19,7 +19,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   font: bold;
   
-width: 50%;
+width: 40%;
   /* For mobile devices */
   @media (max-width: 768px) {
     width: 90%;
