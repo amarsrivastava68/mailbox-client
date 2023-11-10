@@ -18,7 +18,7 @@
   font: bold;
 }
 .text-editor {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -27,5 +27,10 @@
 }
 .inbox-btn {
   justify-content: flex-end;
+  margin-right: 15px;
+}
+.logout-btn {
+  justify-content: flex-end;
+  color: red;
   margin-right: 15px;
 }
