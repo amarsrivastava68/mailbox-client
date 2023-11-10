@@ -28,8 +28,9 @@ const MainPage = () => {
     <div className="mainPage">
       <div className="navbar">
         <div className="mailbox-content">
-         <span className = "font-bold">Welcome to your mailbox</span>
+         <span className = "font-bold text-center">Welcome to your mailbox</span>
         </div>
+    <br/>
 
         <Button className="inbox-btn" onClick={logOutHandler}>
           LogOut
