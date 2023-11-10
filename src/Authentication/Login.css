@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  
 
   /* For mobile devices */
   @media (max-width: 768px) {
@@ -16,13 +16,14 @@
 
 .container {
   border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   font: bold;
-
+  
+width: 50%;
   /* For mobile devices */
   @media (max-width: 768px) {
-    margin: 0 10px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -30,6 +31,11 @@
   color: #1a71e3;
   text-shadow: 0 0 10px rgba(39, 121, 214, 0.8);
   font-size: larger;
+
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 .link-text {
