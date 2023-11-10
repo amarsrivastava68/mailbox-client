@@ -36,7 +36,7 @@ const MyTextEditor = () => {
     const sanitizedText = sanitizeHtml(text);
 
     fetch(
-      "https://mail-box-client-171d8-default-rtdb.firebaseio.com/email.json",
+      "https://mailbox-client-ce33a-default-rtdb.firebaseio.com/email.json",
       {
         method: "POST",
         body: JSON.stringify({
