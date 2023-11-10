@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams,useNavigate } from 'react-router-dom';
 import './ViewMail.css'; 
-
+const userEmail = localStorage.getItem("userEmail");
 const ViewMail = () => {
   const { emailId } = useParams();
   const navigate= useNavigate();
@@ -20,7 +20,7 @@ const ViewMail = () => {
     <div className='veiwMail-div'>
       <div className="navbar">
         <div className="mailbox-content">
-          <span>Welcome to your mailbox</span>
+          <span className = "font-bold">{userEmail}</span>
         </div>
         </div>
     <div className="view-mail-container">
