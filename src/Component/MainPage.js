@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { fetchEmails } from '../Store/emailSlice';
+const userEmail = localStorage.getItem("userEmail");
 
 const MainPage = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const MainPage = () => {
     <div className="mainPage">
       <div className="navbar">
         <div className="mailbox-content">
-          <span>Welcome to your mailbox</span>
+         <span className = "font-bold">User: {userEmail}</span>
         </div>
 
         <Button className="inbox-btn" onClick={logOutHandler}>
