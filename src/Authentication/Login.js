@@ -82,9 +82,15 @@ const Login = () => {
       });
   };
 
-  return (
+  return (<>
+  <h2 className="text-center neon-text flex mt-5"> WELCOME TO MAILBOX CLIENT</h2>
+  <br/>
+ <br/>
+ 
+  
+ 
     <div className="main-div">
-      <Container className="p-3 my-5 d-flex flex-column w-50">
+      <Container className="p-3 my-4 d-flex flex-column ">
         <div className="text-center mb-3">
           <p className={`neon-text ${isLogin ? "neon-signin" : "neon-signup"}`}>
             {isLogin ? "Sign in" : "Sign up"}
@@ -137,6 +143,7 @@ const Login = () => {
         </p>
       </Container>
     </div>
+    </>
   );
 };
 
